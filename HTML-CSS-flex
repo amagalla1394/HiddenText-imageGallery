@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.content-parent {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  	padding: 1px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 0;
+}
+@media screen and (max-width: 2440px) {
+    .content-parent {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @media screen and (max-width: 1382px) {
+        .content-parent {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        @media screen and (max-width: 992px) {
+            .content-parent {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            @media screen and (max-width: 768px) {
+                .content-parent {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+                @media screen and (max-width: 480px) {
+                    .content-parent {
+                        padding-right: 1px;
+                        padding-left: 1px;
+                    }
+                    @media screen and (max-width: 320px) {
+                        .content-parent {
+                            padding-right: 1px;
+                            padding-left: 1px;
+                        }
+                    }
+                }
+            }  
+        }     
+    }
+}
+
+.content-child {
+    width: 180px;
+    padding: 1px;
+}
+@media screen and (max-width: 2440px) {
+    .content-child {
+        width: 200px;
+        padding: 3px;
+    }
+    @media screen and (max-width: 1382px) {
+        .content-child {
+            width: 165px;
+            padding: 1px;
+        }
+        @media screen and (max-width: 1200px) {
+            .content-child {
+                width: 150px;
+                padding: 1px;
+            }        
+            @media screen and (max-width: 992px) {
+                .content-child {
+                    width: 140px;
+                    padding: 1px;
+                }
+                @media screen and (max-width: 769px) {
+                    .content-child {
+                        width: 170px;
+                        padding: 1px 5px;
+                    }   
+                    @media screen and (max-width: 480px) {
+                        .content-child {
+                            width: 139px;
+                            padding: 2px;
+                        }
+                        @media screen and (max-width: 320px) {
+                            .content-child {
+                                width: 126px;
+                                padding: 1px 1px;
+                            }
+                        }         
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+.content-child:hover .overlay {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<div class="content-parent">
+    <div class="content-child">
+        <img src="" style="width: 100%"/>
+        <div class="overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+    <div class="content-child">
+        <img src="" style="width: 100%"/>
+        <div class="overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+    <div class="content-child">
+        <img src="" style="width: 100%"/>
+        <div class="overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+    <div class="content-child">
+        <img src="" style="width: 100%"/>
+        <div class="overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+</div>  
+
+</body>
+</html>
